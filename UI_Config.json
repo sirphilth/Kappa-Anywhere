@@ -1,0 +1,197 @@
+{
+   "output_file": "settings.json",
+   "generalEmotes": {
+       "type": "checkbox",
+       "value": "True",
+       "label": "General emotes ON",
+       "tooltip": "Check the checkbox if you want the General Emotes ON",
+       "group" : "Settings"
+   },
+   "welcomeModule": {
+       "type": "checkbox",
+       "value": "True",
+       "label": "Welcome module ON",
+       "tooltip": "Check the checkbox if you want the welcome message module ON",
+       "group" : "Settings"
+   },
+   "Blacklist": {
+       "type": "textbox",
+       "value": "",
+       "label": "Blacklist",
+       "tooltip": "People prohibited from triggering the emotes messages",
+       "function": "",
+       "group": "Settings"
+   },
+   "breakSeperator": {
+       "type": "textbox",
+       "value": "|",
+       "label": "The parameter to split multiple messages.",
+       "tooltip": "Leave this default, change this to a different 'symbol' if you want to be able to use '|' in your messages.",
+       "function": "",
+       "group": "Advanced Settings (Read the ReadMe)"
+   },
+   "lineSeperator": {
+       "type": "textbox",
+       "value": "~",
+       "label": "The parameter for a new line split",
+       "tooltip": "Leave this default, change this to a different 'symbol' if you want to be able to use '~' in your messages.",
+       "function": "",
+       "group": "Advanced Settings (Read the ReadMe)"
+   },
+   "Mode": {
+       "type": "dropdown",
+       "value": "First emote",
+       "items": [
+       "First emote",
+       "All emotes, once",
+       "All emotes, mirror",
+       "Randomized"
+       ],
+       "label": "Mode",
+       "tooltip": "Set the mode in which the bot repeats emotes. [First emote] Only the first emote gets outputted by the bot. [All emotes, once] Every emote in the list, no duplicates will be outputted by the bot. [All emotes, Mirrored] Outputs the exact amount of emotes in chat. [Randomized] Picks an option from above at random.",
+       "group": "General"
+  },
+  "Words": {
+       "type": "textbox",
+       "value": "",
+       "label": "General emote keywords",
+       "tooltip": "Emotes/words the bot will respond to, leave a space between each emote/word. Leave blank for none",
+       "function": "",
+       "group": "General"
+   },
+   "Cooldown": {
+       "type": "numberbox",
+       "value": 0,
+       "label": "Cooldown (seconds)",
+       "tooltip": "Set a cooldown, leave blank for none",
+       "group": "General"
+   },
+   "Permission": {
+       "type": "dropdown",
+       "value": "Everyone",
+       "items": ["Everyone","Regular","Subscriber","GameWisp Subscriber","Min_Rank","Min_Points","Min_Hours","Moderator","Editor","Caster"],
+       "label": "Permission level for command",
+       "tooltip": "Set the permission level for the emotes to trigger",
+       "function": "",
+       "group": "General"
+   },
+  "prefixCommand": {
+       "type": "textbox",
+       "value": "!greet",
+       "label": "Command to use for editing/adding messages",
+       "tooltip": "command for adding greet messages",
+       "function": "",
+       "group": "Greet module settings"
+   },
+   "addGreet": {
+       "type": "textbox",
+       "value": "add",
+       "label": "Command for adding greet message",
+       "tooltip": "command for adding greet messages",
+       "function": "",
+       "group": "Greet module settings"
+   },
+   "addCurrency": {
+       "type": "numberbox",
+       "value": 0,
+       "label": "Cost for adding welcome message",
+       "tooltip": "Cost for adding welcome message",
+       "group": "Greet module settings"
+   },
+   "editGreet": {
+       "type": "textbox",
+       "value": "edit",
+       "label": "Command for editing message",
+       "tooltip": "command for editing greet messages",
+       "function": "",
+       "group": "Greet module settings"
+   },
+   "editCurrency": {
+       "type": "numberbox",
+       "value": 0,
+       "label": "Cost for editing welcome message",
+       "tooltip": "Cost for editing welcome message",
+       "group": "Greet module settings"
+   },
+   "deleteGreet": {
+       "type": "textbox",
+       "value": "delete",
+       "label": "Command for deleting a welcome message",
+       "tooltip": "command for deleting a welcome message",
+       "function": "",
+       "group": "Greet module settings"
+   },
+   "deleteCurrency": {
+       "type": "numberbox",
+       "value": 0,
+       "label": "Cost for deleting welcome message",
+       "tooltip": "Cost for deleting welcome message",
+       "group": "Greet module settings"
+   },
+   "listGreet": {
+       "type": "textbox",
+       "value": "list",
+       "label": "Command for showing greet list in chat",
+       "tooltip": "command for showing greet list in chat",
+       "function": "",
+       "group": "Greet module settings"
+   },
+   "blacklistedWords": {
+       "type": "textbox",
+       "value": "[ ]",
+       "label": "Blacklisted words",
+       "tooltip": "words that are blacklisted from welcome messages",
+       "function": "",
+       "group": "Greet module settings"
+   },
+   "testPath": {
+       "type": "textbox",
+       "value": "",
+       "label": "Path of the sound file",
+       "tooltip": "Insert the path of the soundfile that you want to test",
+       "function": "",
+       "group": "Test Sound"
+   },
+   "testVolume": {
+       "type": "slider",
+       "label": "Volume",
+       "value": 50,
+       "min": 1,
+       "max": 100,
+       "ticks": 1,
+       "tooltip": "Volume used for the sound",
+       "group": "Test Sound"
+   },
+   "Soundtest": {
+       "type": "button",
+       "label": "Test Sound",
+       "tooltip": "Click this button to test your sound",
+       "wsevent": "",
+       "function": "testSound",
+       "group": "Test Sound"
+   },
+   "openspecial": {
+       "type": "button",
+       "label": "open special emotes file",
+       "tooltip": "special emotes file",
+       "wsevent": "",
+       "function": "openSpecialEmotes",
+       "group": ""
+   },
+   "reloadspecial": {
+       "type": "button",
+       "label": "Reload special emotes file",
+       "tooltip": "Reload Greet module settings file",
+       "wsevent": "",
+       "function": "reloadSpecialEmotes",
+       "group": ""
+   },
+   "btnreadme": {
+       "type": "button",
+       "label": "open readme",
+       "tooltip": "read this!",
+       "wsevent": "",
+       "function": "openreadme",
+       "group": ""
+   }
+}
